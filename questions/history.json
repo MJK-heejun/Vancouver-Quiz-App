@@ -1,0 +1,21 @@
+[
+
+	{
+		"type": "multiple_choice",
+		"question": "In what year is Vancouver established?",
+		"option":{
+			"a": "1666",
+			"b": "1766",
+			"c": "1866",
+			"d": "1901"
+			},
+		"answer": "c"
+	},
+	{
+		"type": "fill_in",
+		"question": "The city Vancouver were named after Captain _______ Vancouver who was an English officer of the British Royal Navy.",
+		"answer": "george"
+	}
+
+
+]
