@@ -1,9 +1,11 @@
 <div class="jumbotron">
   <p>total score: {{total_score}}</p>
   <p>home page</p>
-  <a href="#/play?category=attractions">attractions</a><br/>
-  <a href="#/play?category=entertainment">entertainment</a><br/>
-  <a href="#/play?category=geography">geography</a><br/>
-  <a href="#/play?category=history">history</a><br/>
-  <a href="#/play?category=sports">sports</a><br/>
+
+
+  <div ng-click="setCategory('attractions')">Attractions</div>
+  <div ng-click="setCategory('entertainment')">entertainment</div>
+  <div ng-click="setCategory('geography')">geography</div>
+  <div ng-click="setCategory('history')">history</div>
+  <div ng-click="setCategory('sports')">sports</div>
 </div>

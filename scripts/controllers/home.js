@@ -11,18 +11,26 @@
 
 
 angular.module('vancouverApp')
-  .controller('HomeCtrl', function ($scope, score) {
+  .controller('HomeCtrl', function ($scope, globals, $location) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    $scope.total_score = score.total;
+    //$scope.total_score = score.total;
 
     //score.total += 1;
 
-  });
+
+    $scope.setCategory = function(category){
+      globals.current_category = category;
+      $location.path('/play');
+    }
+
+
+
+});
 
 
 

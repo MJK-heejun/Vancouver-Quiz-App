@@ -1,3 +1,42 @@
-<div class="jumbotron">
-  play page
+<div class="border">
+  <div classs="row">
+  	<div class="col-xs-12">
+  	timer
+  	</div>
+  </div>
+  <div classs="row">
+  	<div class="col-xs-12">
+  	progress bar
+  	</div>
+  </div>
+  <div classs="row">
+  	<div class="col-xs-12">
+  		<div>
+        {{question}}
+      </div>
+
+      <div ng-if="isMc">        
+        <div ng-repeat="(value, option) in option">
+          <input type="radio" ng-model="value" />{{option}}
+        </div>
+      </div>
+
+      <div ng-if="isCheck">
+        <div ng-repeat="(value, option) in option">
+          <input type="checkbox" ng-model="value" />{{option}}
+        </div>
+      </div>
+
+      <div ng-if="isFill">
+        <input type="text" />
+      </div>
+
+      <div>
+        <button name="submit_button" ng-click="submitAnswer()">Submit</button>         
+      </div>
+
+
+
+  	</div>
+  </div>
 </div>

@@ -47,7 +47,18 @@ var app = angular.module('vancouverApp');
 
 
 
+app.value('globals',{
+  current_category: "none",
+  total_score : 0,
+  attractions_score : 0,
+  entertainment_score : 0,
+  geography_score : 0,
+  histor_score : 0,
+  sports_score : 0
+});
 
+
+/*
 app.factory('score', function(){
   var score = {}; //object declaration
 
@@ -60,9 +71,7 @@ app.factory('score', function(){
 
   return score;
 });
-
-
-
+*/
 
 /*
 app.factory('simplef', function(){
