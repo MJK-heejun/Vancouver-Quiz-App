@@ -61,7 +61,7 @@ angular.module('vancouverApp')
             console.log($scope.formData.check_val);
         }else if($scope.isFill){
             var my_answer = $scope.formData.fill_val;
-            if(q_lists[q_index].answer == my_answer.toLowerCase()){
+            if(typeof(my_answer) != "undefined" && q_lists[q_index].answer == my_answer.toLowerCase()){
                 score.addScore(globals.current_category);            
                 console.log("correct. +10 score.");
             }
