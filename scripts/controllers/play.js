@@ -8,7 +8,7 @@
  * Controller of the testApp
  */
 angular.module('vancouverApp')
-  .controller('PlayCtrl', function ($scope, globals, $http, $location){
+  .controller('PlayCtrl', function ($scope, globals, $http, $location, score){
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -40,7 +40,8 @@ angular.module('vancouverApp')
 	    }
 
         //reset the category score
-        setScoreToZero(globals.current_category);
+        //setScoreToZero(globals.current_category);
+        score.setToZero(globals.current_category);
         //start the question!!
 	    getCurrentIndexQuestion();
     });
@@ -51,14 +52,19 @@ angular.module('vancouverApp')
 
         //score calculation
         if($scope.isMc){
-            if(q_lists[q_index].answer == $scope.formData.mc_val)
-                addScore(globals.current_category);            
+            if(q_lists[q_index].answer == $scope.formData.mc_val){
+                score.addScore(globals.current_category);            
+                console.log("correct. +10 score.");
+            }
         }else if($scope.isCheck){
             //not complete
             console.log($scope.formData.check_val);
         }else if($scope.isFill){
-            if(q_lists[q_index].answer == $scope.formData.fill_val)
-                addScore(globals.current_category);            
+            var my_answer = $scope.formData.fill_val;
+            if(q_lists[q_index].answer == my_answer.toLowerCase()){
+                score.addScore(globals.current_category);            
+                console.log("correct. +10 score.");
+            }
         }
 
         //determine whether to display the next question or go to result page
@@ -70,9 +76,7 @@ angular.module('vancouverApp')
     }
 
 
-
-    //private functions thingy?
-
+    //private functions thingy
     function getCurrentIndexQuestion(){
 
         $scope.question = q_lists[q_index].question;
@@ -105,7 +109,7 @@ angular.module('vancouverApp')
     }
 
 
-
+/*
     function setScoreToZero(category){
         switch(category){
           case "attractions":   
@@ -147,5 +151,5 @@ angular.module('vancouverApp')
           default:          
         }        
     }
-
+*/
 });

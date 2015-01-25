@@ -8,7 +8,7 @@
  * Controller of the testApp
  */
 angular.module('vancouverApp')
-  .controller('ResultCtrl', function ($scope, globals) {
+  .controller('ResultCtrl', function ($scope, globals, score) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -16,11 +16,8 @@ angular.module('vancouverApp')
     ];
 
     //retrive the result
-    $scope.total_current_category_score = getFinalScore();
-    //add up to the total score
-    globals.total_score += $scope.total_current_category_score;
-
-
+    $scope.total_current_category_score = score.getFinalScore(globals.current_category);
+/*
     function getFinalScore(){
         switch(globals.current_category){
           case "attractions":   
@@ -43,6 +40,6 @@ angular.module('vancouverApp')
           	return -1;     
         }        
     }    
-
+*/
 
   });
