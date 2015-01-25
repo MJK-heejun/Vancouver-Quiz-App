@@ -23,8 +23,11 @@ angular.module('vancouverApp')
 
     $scope.chooseCategory = function(category){
       globals.current_category = category;
-      $location.path('/play');
+
+      if(category == 'geography')
+        $location.path('/play');
     }
+
 
 
 
