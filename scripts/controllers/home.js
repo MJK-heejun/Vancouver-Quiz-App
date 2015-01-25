@@ -18,12 +18,12 @@ angular.module('vancouverApp')
       'Karma'
     ];
 
-    //$scope.total_score = score.total;
+    $scope.total_score = globals.total_score;
 
     //score.total += 1;
 
 
-    $scope.setCategory = function(category){
+    $scope.chooseCategory = function(category){
       globals.current_category = category;
       $location.path('/play');
     }

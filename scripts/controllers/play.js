@@ -16,11 +16,10 @@ angular.module('vancouverApp')
     ];
 
 
-    
-
-    var q_lists = [];    
-	var q_index = 0;
-    var q_limit = 6;
+    $scope.formData = {}; //answers received from user
+    var q_lists = [];//array of questions    
+	var q_index = 0; //start from 0
+    var q_limit = 6; //6 questions per try
 
     //retrieve the questions list from JSON file
     $http.get('scripts/questionsJson/'+globals.current_category+'.json').then(function(res){
@@ -40,22 +39,43 @@ angular.module('vancouverApp')
 	    	q_lists[i] = res.data[r_num];	    
 	    }
 
-	    //console.log(q_lists);
-	    //console.log("rnum: "+tmp_random_array);
-
+        //reset the category score
+        setScoreToZero(globals.current_category);
+        //start the question!!
 	    getCurrentIndexQuestion();
     });
 
 
-//var page_content = $("html").clone().find("script,noscript,style").remove().end().html(); 
+    $scope.submitAnswer = function(){
 
 
-	//$scope.question = q_lists[q_index].question;
+        //score calculation
+        if($scope.isMc){
+            if(q_lists[q_index].answer == $scope.formData.mc_val)
+                addScore(globals.current_category);            
+        }else if($scope.isCheck){
+            //not complete
+            console.log($scope.formData.check_val);
+        }else if($scope.isFill){
+            if(q_lists[q_index].answer == $scope.formData.fill_val)
+                addScore(globals.current_category);            
+        }
 
+        //determine whether to display the next question or go to result page
+        q_index++;
+        if(q_index < q_limit)
+            getCurrentIndexQuestion();
+        else 
+            $location.path('/result');
+    }
+
+
+
+    //private functions thingy?
 
     function getCurrentIndexQuestion(){
 
-    	$scope.question = q_lists[q_index].question;
+        $scope.question = q_lists[q_index].question;
 
         $scope.q_type = q_lists[q_index].type;
 
@@ -79,31 +99,53 @@ angular.module('vancouverApp')
                  i++;
             }
             $scope.option = tmp_arr;            
-    	}else if($scope.isFill){
-
-
-    	}
-    }
-
-    $scope.submitAnswer = function(){
-
-        //score calculation
-        if($scope.isMc){
-            
-        }else if($scope.isCheck){
-
         }else if($scope.isFill){
-
+            //do nothing
         }
-
-
-        //determine whether to display the next question or go to result page
-        q_index++;
-        if(q_index < q_limit)
-            getCurrentIndexQuestion();
-        else 
-            $location.path('/result');
     }
 
+
+
+    function setScoreToZero(category){
+        switch(category){
+          case "attractions":   
+            globals.attractions_score = 0;     
+          break;
+          case "entertainment":
+            globals.entertainment_score = 0;
+          break;
+          case "geography":
+            globals.geography_score = 0;
+          break;
+          case "history":
+            globals.history_score = 0;
+          break;
+          case "sports":
+            globals.sports_score = 0;
+          break;
+          default:          
+        }        
+    }
+
+    function addScore(category){
+        switch(category){
+          case "attractions":   
+            globals.attractions_score += 10;     
+          break;
+          case "entertainment":
+            globals.entertainment_score += 10;
+          break;
+          case "geography":
+            globals.geography_score += 10;
+          break;
+          case "history":
+            globals.history_score += 10;
+          break;
+          case "sports":
+            globals.sports_score += 10;
+          break;
+          default:          
+        }        
+    }
 
 });

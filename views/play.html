@@ -17,25 +17,23 @@
 
       <div ng-if="isMc">        
         <div ng-repeat="(value, option) in option">
-          <input type="radio" ng-model="value" />{{option}}
+          <input type="radio" ng-model="formData.mc_val" value="{{value}}"/>{{option}}
         </div>
       </div>
 
       <div ng-if="isCheck">
         <div ng-repeat="(value, option) in option">
-          <input type="checkbox" ng-model="value" />{{option}}
+          <input type="checkbox" ng-model="formData.check_val" value="{{value}}" />{{option}}
         </div>
       </div>
 
       <div ng-if="isFill">
-        <input type="text" />
+        <input type="text" ng-model="formData.fill_val" />
       </div>
 
       <div>
-        <button name="submit_button" ng-click="submitAnswer()">Submit</button>         
+        <button name="submit_button"  ng-click="submitAnswer()">Submit</button>         
       </div>
-
-
 
   	</div>
   </div>

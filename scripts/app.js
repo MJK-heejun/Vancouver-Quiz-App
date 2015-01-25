@@ -53,7 +53,7 @@ app.value('globals',{
   attractions_score : 0,
   entertainment_score : 0,
   geography_score : 0,
-  histor_score : 0,
+  history_score : 0,
   sports_score : 0
 });
 
@@ -61,6 +61,23 @@ app.value('globals',{
 /*
 app.factory('score', function(){
   var score = {}; //object declaration
+
+
+  score.addScore = function(category){
+    switch(category){
+      case "attractions":        
+      break;
+      case "entertainment":
+      break;
+      case "geography":
+      break;
+      case "history":
+      break;
+      case "sports":
+      break;
+      default:          
+    }
+  };
 
   score.total = 0;
   score.attractions = 0;
