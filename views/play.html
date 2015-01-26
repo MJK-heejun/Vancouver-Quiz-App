@@ -1,12 +1,12 @@
 <div class="border">
   <div classs="row">
   	<div class="col-xs-12">
-  	timer
+  	timer ( 0:{{time_limit}})
   	</div>
   </div>
   <div classs="row">
   	<div class="col-xs-12">
-  	progress bar
+  	progress bar {{get_q_index()+1}} / {{get_q_limit()}}
   	</div>
   </div>
   <div classs="row">
@@ -17,13 +17,13 @@
 
       <div ng-if="isMc">        
         <div ng-repeat="(value, option) in option">
-          <input type="radio" ng-model="formData.mc_val" value="{{value}}"/>{{option}}
+          <input type="radio" ng-model="formData.mc_val" value="{{value}}" />{{option}}
         </div>
       </div>
 
       <div ng-if="isCheck">
         <div ng-repeat="(value, option) in option">
-          <input type="checkbox" ng-model="formData.check_val" value="{{value}}" />{{option}}
+          <input type="checkbox" checklist-model="formData.check_val" checklist-value="{{value}}" />{{option}}
         </div>
       </div>
 

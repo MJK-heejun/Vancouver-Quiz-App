@@ -1,0 +1,166 @@
+[
+
+	{
+		"type": "mc",
+		"question": "In what year is Vancouver established?",
+		"option":{
+			"0": "1666",
+			"1": "1766",
+			"2": "1866",
+			"3": "1901"
+			},
+		"answer": "2"
+	},
+	{
+		"type": "fill",
+		"question": "The city Vancouver were named after Captain _______ Vancouver who was an English officer of the British Royal Navy.",
+		"answer": "george"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which river borders vancouver to the south?",
+		"option":{
+			"0": "Columbia",
+			"1": "Fraser",
+			"2": "Peace",
+			"3": "Liard"
+			},
+		"answer": "1"
+	},
+	{
+		"type": "mc",
+		"question": "How does Vancouver rank in size compared with other Canadian cities?",
+		"option":{
+			"0": "First",
+			"1": "Second",
+			"2": "Third",
+			"3": "Fourth"
+			},
+		"answer": "2"
+	},
+	{
+		"type": "fill",
+		"question": "In What city is the Vancouver international Airport located?",
+		"answer": "richmond"
+	},
+	{
+		"type": "mc",
+		"question": "Which city in Metro Vancouver has the 2nd largest population?",
+		"option":{
+			"0": "Vancouver",
+			"1": "Burnaby",
+			"2": "Surrey",
+			"3": "Richmond"
+			},
+		"answer": "2"
+	},
+	{
+		"type": "mc",
+		"question": "Which city is NOT part of Metro Vancouver?",
+		"option":{
+			"0": "Maple Ridge",
+			"1": "Langley",
+			"2": "Pitt Meadows",
+			"3": "None of the above"
+			},
+		"answer": "3"
+	},
+	{
+		"type": "mc",
+		"question": "Vancouver is located between the Street of Georgia and?",
+		"option":{
+			"0": "Coast Mountains",
+			"1": "East Mountains",
+			"2": "West Mountains",
+			"3": "Riverwood Mountains"
+			},
+		"answer": "0"
+	},
+	{
+		"type": "mc",
+		"question": "Vancouver is the largest metropolitan area in western Canada and the what largest in the country?",
+		"option":{
+			"0": "2nd",
+			"1": "3rd",
+			"2": "4th",
+			"3": "5th"
+			},
+		"answer": "1"
+	},
+	{
+		"type": "mc",
+		"question": "Which province is Vancouver part of?",
+		"option":{
+			"0": "British Columbia",
+			"1": "Alberta",
+			"2": "Yukon",
+			"3": "Ontario"
+			},
+		"answer": "0"
+	},
+	{
+		"type": "check",
+		"question": "What are the two biggest University in Metro Vancouver?",
+		"option":{
+			"0": "Capilano University",
+			"1": "Simon Fraser University",
+			"2": "University of Billion Chinese",
+			"3": "University of British Columbia"			
+			},
+		"answer": "13"
+	},
+	{
+		"type": "check",
+		"question": "Simon Fraser University has campuses in 3 different cities. What are they? (Checkbox question)",
+		"option":{
+			"0": "Surrey",
+			"1": "Vancouver",
+			"2": "Richmond",
+			"3": "Burnaby"
+			},
+		"answer": "013"
+	},
+	{
+		"type": "mc",
+		"question": "Which of the following parks is located in Vancouver",
+		"option":{
+			"0": "Stanley Park",
+			"1": "Butchart Gardens",
+			"2": "Bear Creek Park",
+			"3": "Tryndamere Park"
+			},
+		"answer": "0"
+	},
+	{
+		"type": "mc",
+		"question": "Which of these roads is not found in Vancouver?",
+		"option":{
+			"0": "Main Street",
+			"1": "Broadway",
+			"2": "Commercial",
+			"3": "King George Highway"
+			},
+		"answer": "3"
+	},
+	{
+		"type": "mc",
+		"question": "Which of these places is located about 30 minutes car ride away from Vancouver?",
+		"option":{
+			"0": "Surrey",
+			"1": "Kamloops",
+			"2": "Kelowna",
+			"3": "Merritt"
+			},
+		"answer": "0"
+	},
+	{
+		"type": "fill",
+		"question": "Science World is located on _____ Street",
+		"answer": "quebec"
+	}
+]
+
+
+
+

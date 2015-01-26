@@ -41,8 +41,6 @@ angular
 
 
 
-
-
 var app = angular.module('vancouverApp');
 
 
