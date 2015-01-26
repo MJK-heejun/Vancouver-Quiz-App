@@ -16,9 +16,15 @@ angular.module('vancouverApp')
     var q_limit = 6; //6 questions per try
     var timerInterval; //setInterval for timer
 
+    //if the current_category is 'none', it means that the user refreshed the page or manually typed the url path
+    if(globals.current_category == "none"){
+      //navigatge back to home
+      $location.path('/home');
+    }
+
     //retrieve the questions list from JSON file
     //$http.get('scripts/questionsJson/'+globals.current_category+'.json').then(function(res){
-		$http.get('scripts/questionsJson/'+"geography"+'.json').then(function(res){    	
+		$http.get('scripts/questionsJson/'+globals.current_category+'.json').then(function(res){    	
     	var tmp_random_array = [];
 	    while(tmp_random_array.length < q_limit){
 	    	var tmp_r_val = Math.floor((Math.random() * res.data.length));
@@ -53,7 +59,7 @@ angular.module('vancouverApp')
                 console.log("correct. +10 score."); //debug line
             }              
         }else if($scope.isCheck){
-            if(q_lists[q_index].answer == $scope.formData.check_val.sort()){
+            if(typeof($scope.formData.check_val) != "undefined" && q_lists[q_index].answer == $scope.formData.check_val.sort()){
               score.addScore(globals.current_category);
               console.log("correct. +10 score."); //debug line
             }
@@ -119,7 +125,7 @@ angular.module('vancouverApp')
 
     function timerStart(){
 
-      $scope.time_limit = 59; //seconds
+      $scope.time_limit = 5; //seconds
 
       timerInterval = $interval(function(){      
           $scope.time_limit -= 1;

@@ -8,10 +8,17 @@
  * Controller of the testApp
  */
 angular.module('vancouverApp')
-  .controller('ResultCtrl', function ($scope, globals, score) {
+  .controller('ResultCtrl', function ($scope, globals, score, $location) {
 
     //retrive the result
     $scope.total_current_category_score = score.getFinalScore(globals.current_category);
+
+    //if -1, it means that the user refreshed or manually opened the page
+    if($scope.total_current_category_score == -1){
+      //navigate back to home
+      $location.path('/home');
+    }
+
 /*
     function getFinalScore(){
         switch(globals.current_category){
