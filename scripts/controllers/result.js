@@ -9,11 +9,6 @@
  */
 angular.module('vancouverApp')
   .controller('ResultCtrl', function ($scope, globals, score) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 
     //retrive the result
     $scope.total_current_category_score = score.getFinalScore(globals.current_category);

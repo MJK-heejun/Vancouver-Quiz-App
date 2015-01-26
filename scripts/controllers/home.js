@@ -12,11 +12,6 @@
 
 angular.module('vancouverApp')
   .controller('HomeCtrl', function ($scope, globals, $location, score) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 
     $scope.total_score = score.getTotalScore();
 

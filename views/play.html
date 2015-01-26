@@ -23,7 +23,8 @@
 
       <div ng-if="isCheck">
         <div ng-repeat="(value, option) in option">
-          <input type="checkbox" checklist-model="formData.check_val" checklist-value="{{value}}" />{{option}}
+          <input type="checkbox" checklist-model="formData.check_val" 
+          checklist-value="value" />{{option}}
         </div>
       </div>
 

@@ -9,17 +9,11 @@
  */
 angular.module('vancouverApp')
   .controller('PlayCtrl', function ($scope, globals, $http, $location, score, $interval, $rootScope){
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
 
     $scope.formData = {}; //answers received from user
     var q_lists = [];//array of questions    
     var q_index = 0; //start from 0
-    var q_limit = 2; //6 questions per try
+    var q_limit = 6; //6 questions per try
     var timerInterval; //setInterval for timer
 
     //retrieve the questions list from JSON file
@@ -59,11 +53,10 @@ angular.module('vancouverApp')
                 console.log("correct. +10 score."); //debug line
             }              
         }else if($scope.isCheck){
-            //not complete
-            console.log("checkbox data: "+$scope.formData.check_val);
-            console.log("formdata: "+$scope.formData);
-            console.log("fill data: "+$scope.formData.fill_val);
-            console.log("mc data: "+$scope.formData.mc_val);
+            if(q_lists[q_index].answer == $scope.formData.check_val.sort()){
+              score.addScore(globals.current_category);
+              console.log("correct. +10 score."); //debug line
+            }
         }else if($scope.isFill){
             var my_answer = $scope.formData.fill_val;
             if(typeof(my_answer) != "undefined" && q_lists[q_index].answer == my_answer.toLowerCase()){
@@ -74,6 +67,7 @@ angular.module('vancouverApp')
 
         //reset the val for next question
         $scope.formData.mc_val = -1;
+        $scope.formData.check_val = [];
         $scope.formData.fill_val = "";
 
         //determine whether to display the next question or go to result page

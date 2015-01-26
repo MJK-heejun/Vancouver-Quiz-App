@@ -14,7 +14,8 @@ angular
     'ngMessages',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'checklist-model'
   ])
   .config(function ($routeProvider) {
     $routeProvider
