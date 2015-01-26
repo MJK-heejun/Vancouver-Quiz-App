@@ -125,7 +125,7 @@ angular.module('vancouverApp')
 
     function timerStart(){
 
-      $scope.time_limit = 5; //seconds
+      $scope.time_limit = 10; //seconds
 
       timerInterval = $interval(function(){      
           $scope.time_limit -= 1;
