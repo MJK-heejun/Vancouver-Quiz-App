@@ -78,10 +78,12 @@ angular.module('vancouverApp')
 
         //determine whether to display the next question or go to result page
         q_index++;
-        if(q_index < q_limit)
-            getCurrentIndexQuestion();
-        else 
-            $location.path('/result');
+        if(q_index < q_limit){
+          getCurrentIndexQuestion();
+        }else{
+          $location.path('/result');
+          globals.q_lists = q_lists;
+        }
     };
 
 

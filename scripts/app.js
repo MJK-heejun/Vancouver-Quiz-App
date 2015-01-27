@@ -47,7 +47,9 @@ var app = angular.module('vancouverApp');
 
 
 app.value('globals',{
-  current_category: "none"/*,
+  current_category: "none",
+  q_lists : ""
+  /*,
   total_score : 0,
   attractions_score : 0,
   entertainment_score : 0,

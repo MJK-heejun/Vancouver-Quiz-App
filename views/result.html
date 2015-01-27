@@ -1,6 +1,14 @@
 <div class="jumbotron">
   The total score = {{total_current_category_score}}
 
+  <div ng-repeat="q_object in q_lists" class="border">
+  	<div ng-show="isCurrentIndex($index)" ng-swipe-left="swipeAction(-1)" ng-swipe-right="swipeAction(1)" >
+  		Question: {{q_object.question}}<br/>
+  		Answer: {{q_object.answer}}
+  	</div>
+  </div>
+
+
   <p>
   	<a href="#/home">back to main page</a><br/>
   	<a href="#/play">try again</a>
