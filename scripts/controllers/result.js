@@ -34,7 +34,8 @@ angular.module('vancouverApp')
         return false;
     };
 
-  
+    
+
     
 
     //if -1, it means that the user refreshed or manually opened the page
