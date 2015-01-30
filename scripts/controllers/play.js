@@ -10,6 +10,7 @@
 angular.module('vancouverApp')
   .controller('PlayCtrl', function ($scope, globals, $http, $location, score, $interval, $rootScope){
 
+    //$scope.headerText = globals.current_category;
     $scope.pageClass = 'page-play';
 
 
