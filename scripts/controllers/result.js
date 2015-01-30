@@ -10,6 +10,7 @@
 angular.module('vancouverApp')
   .controller('ResultCtrl', function ($scope, globals, score, $location) {
 
+    //$scope.headerText = "Result";
     $scope.pageClass = 'page-result';
 
 
