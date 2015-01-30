@@ -72,6 +72,8 @@ angular.module('vancouverApp')
                 score.addScore(globals.current_category);            
                 console.log("correct. +10 score."); //debug line
             }
+        }else{ //wrong answer
+          console.log("Wrong. The correct answer is:"+ q_lists[q_index].answer);
         }
 
         //reset the val for next question
