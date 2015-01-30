@@ -143,6 +143,11 @@ app.factory('score', function(){
 });
 
 
+
+
+
+
+
 /*
 app.factory('simplef', function(){
   var test = {}; //test object

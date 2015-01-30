@@ -10,6 +10,11 @@
 angular.module('vancouverApp')
   .controller('ResultCtrl', function ($scope, globals, score, $location) {
 
+    $scope.pageClass = 'page-result';
+
+
+    $scope.lions = false;
+
     //retrive the result
     $scope.total_current_category_score = score.getFinalScore(globals.current_category);
 

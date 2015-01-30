@@ -1,0 +1,89 @@
+/*
+.page-home.ng-animate {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+
+.page-home.ng-leave.ng-leave-active,
+.page-home.ng-enter {
+  top:-50px;
+}
+.page-home.ng-leave,
+.page-home.ng-enter.ng-enter-active {
+  top:0;
+}
+
+
+
+.ng-hide-add         { animation:0.5s lightSpeedOut ease; }
+.ng-hide-remove      { animation:0.5s flipInX ease; }
+*/
+
+
+
+.cc{
+
+  -webkit-animation: shake 5s; /* Chrome, Safari, Opera */
+  animation: shake 5s;
+}
+
+.cc.ng-hide {
+  
+}
+
+/*
+.page{
+  position: absolute;
+}
+*/
+
+/*home view*/
+/*
+.page-home.ng-enter{ 
+  -webkit-animation:slideInRight 0.5s both ease-in;   
+  animation:slideInRight 0.5s both ease-in; 
+}
+*/
+/*ng-enter-active*/
+/*
+.page-home.ng-leave{ 
+  -webkit-animation:slideOutLeft 0.5s both ease-in;   
+  animation:slideOutLeft 0.5s both ease-in; 
+}
+*/
+/*
+.page-play{
+  position: absolute;
+}
+.page-play.ng-enter{ 
+  -webkit-animation:slideInRight 0.5s both ease-in;   
+  animation:slideInRight 0.5s both ease-in; 
+}
+*/
+/*ng-enter-active*/
+/*
+.page-play.ng-leave{ 
+  -webkit-animation:slideOutLeft 0.5s both ease-in;   
+  animation:slideOutLeft 0.5s both ease-in; 
+}
+*/
+
+
+/*
+
+.sample-show-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.sample-show-hide.ng-hide {
+  opacity:0;
+}
+*/

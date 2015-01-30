@@ -12,8 +12,11 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/animateAssign.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/customHelper.css">
+
     <!-- endbuild -->
   </head>
   <body ng-app="vancouverApp">
@@ -33,10 +36,13 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <div ng-view=""></div>
+                <div class="view_container">
+                    <div class="page {{pageClass}}" ng-view=""></div>
+                </div>
             </div>
         </div>
 
+<!--
         <div class="row">
             <div class="col-xs-12">
                 <div class="footer">
@@ -44,6 +50,7 @@
                 </div>
             </div>
         </div>
+-->
     </div>
 
 

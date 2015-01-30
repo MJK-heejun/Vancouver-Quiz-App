@@ -13,6 +13,8 @@
 angular.module('vancouverApp')
   .controller('HomeCtrl', function ($scope, globals, $location, score) {
 
+    $scope.pageClass = 'page-home';
+
     $scope.total_score = score.getTotalScore();
 
 
