@@ -2,7 +2,17 @@
 	border: 1px solid black;
 }
 
+.border-r{
+  border: 1px solid red;
+}
 
+.border-b{
+  border: 1px solid blue;
+}
+
+.border-g{
+  border: 1px solid green;
+}
 
 .float-left{
   float: left;
@@ -11,4 +21,15 @@
 
 .tmp-h{
   height: 150px;
+}
+
+.da0{
+  padding: 0;
+  margin: 0;
+}
+.padding-0{
+  padding: 0;
+}
+.margin-0{
+  margin: 0;
 }
