@@ -1,59 +1,57 @@
 
   
 
-  
-<!--
-<div class="row tmp-h border">
-	<div class="col-xs-3 icon-background">
-		<img class="border" src="images/attraction.png" alt="" />
-	</div>
-	<div class="col-xs-9">
-		Attractions
-	</div>
-</div>
-
--->
-
 <div class="row">
 	<div class="col-xs-12 category-row-background padding-0">
-		<img src="images/bar/sport.png" alt="" />
+		<img ng-click="chooseCategory('sports')" 
+			class="width-100" 
+			src="images/bar/sport.png" 
+			alt="" />
 	</div>
 </div>
 <div class="row">
 	<div class="col-xs-12 category-row-background padding-0">
-		<img src="images/bar/attraction.png" alt="" />
+		<img ng-click="chooseCategory('attractions')" 
+			class="width-100" 
+			src="images/bar/attraction.png" 
+			alt="" />
 	</div>
 </div>
 <div class="row">
 	<div class="col-xs-12 category-row-background padding-0">
-		<img src="images/bar/entertainment.png" alt="" />
+		<img ng-click="chooseCategory('entertainment')" 
+			class="width-100" 
+			src="images/bar/entertainment.png" 
+			alt="" />
 	</div>
 </div>
 <div class="row">
 	<div class="col-xs-12 category-row-background padding-0">
-		<img src="images/bar/history.png" alt="" />
+		<img ng-click="chooseCategory('history')" 
+			class="width-100" 
+			src="images/bar/history.png" 
+			alt="" />
 	</div>
 </div>
 <div class="row">
 	<div class="col-xs-12 category-row-background padding-0">
-		<img src="images/bar/location.png" alt="" />
+		<img ng-click="chooseCategory('geography')" 
+			class="width-100" 
+			src="images/bar/location.png" 
+			alt="" />
 	</div>
 </div>
 <div class="row">
 	<div class="col-xs-12 category-row-background padding-0">
-		<img src="images/bar/random.png" alt="" />
+		<img ng-click="chooseCategory('random')" 
+			class="width-100" 
+			src="images/bar/random.png" 
+			alt="" />
 	</div>
 </div>
 
+
+
 <div class="row">
-  <div ng-click="chooseCategory('entertainment')">entertainment</div>
-
-  <a ng-click="chooseCategory('geography')">geography</a>
-
-  <div ng-click="chooseCategory('history')">history</div>
-  <div ng-click="chooseCategory('sports')">sports</div>
-
-
-
   <p>total score: {{total_score}}</p>
 </div>
