@@ -24,8 +24,8 @@ angular.module('vancouverApp')
     if(globals.current_category == "none"){
       //navigatge back to home
       
-      //$location.path('/home');
-      globals.current_category = "geography";
+      $location.path('/home');
+      //globals.current_category = "geography";
     }
 
     //retrieve the questions list from JSON file
@@ -146,15 +146,13 @@ angular.module('vancouverApp')
 
     function fillProgressBar(index){
       index++;
-      console.log("aa");
       $("#p"+index).css("background-color","#78c192");
-      console.log("bb");
     }
 
 
     function timerStart(){
 
-      $scope.time_limit = 9999; //seconds
+      $scope.time_limit = 59; //seconds
 
       timerInterval = $interval(function(){      
           $scope.time_limit -= 1;

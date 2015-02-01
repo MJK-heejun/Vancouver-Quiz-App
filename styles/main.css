@@ -43,17 +43,42 @@ body{
 	background-color: #78c192;
 }
 
-/*
-<div class="span6 center">
-<label> new label</label>
-</div>
 
-.center{
-    width : 100px;
-    height : 100px;
-    display : table-cell;
-    vertical-align : middle;
-    border : 1px solid red;
-    float:none;
+.timer{
+	text-align: center;
+	font-family: 'LatoBold', Georgia;
+	font-size: 14pt;
+	color: #fd876c;
 }
-*/
+
+
+.textbox {
+    width: 100%;
+    border: solid 1px #ccc;
+    height: 26px;
+
+    background: #78c192;
+    background: -moz-linear-gradient(top, #78c192 0%, #78c192 20%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #78c192), color-stop(20%, #78c192));
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 0 #f2f2f2;
+    -webkit-box-shadow: 0 1px 0 #F2F2F2;
+
+    font-family: 'LatoBold', Georgia;
+    font-size: 16px;
+
+    color: #ddeee3;
+
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 #334F71;
+}
+
+.textbox:focus {
+    background: #5ab37a;
+    background: -moz-linear-gradient(top, #5ab37a 0%, #5ab37a 20%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5ab37a), color-stop(20%, #5ab37a));
+    outline: 0;
+}
