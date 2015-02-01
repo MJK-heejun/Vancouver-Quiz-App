@@ -1,3 +1,129 @@
 [
+	{
+		"type": "mc",
+		"question": "Tucked at the base of a cliff near the University of British Coloumbia and reachable only by steep hiking trails, Wreck Beach is famous for what?",
+		"option":{
+			"0": "Hosting college parties every spring",
+			"1": "The number of Indian artifacts found there",
+			"2": "The numerous ships that have wrecked along its shore",
+			"3": "being the city’s only clothing-optional beach"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
+		"question": "How high is Vancouver’s famous Capilano Suspension Bridge?",
+		"option":{
+			"0": "110 feet (34 meters)",
+			"1": "230 feet (70 meters)",
+			"2": "260 feet (79 meters)",
+			"3": "310 feet (94 meters)"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "check",
+		"question": "Which attractions are in vancouver?",
+		"option":{
+			"0": "Dr. Sun Yat-Sen Classical Chinese Garden",
+			"1": ".Kitsilano Beach",
+			"2": "Jericho Beach",
+			"3": "Knott's Berry Farm"			
+			},
+		"answer": "0,1,2"
+	},
+
+	{
+		"type": "mc",
+		"question": "How large is the Stanley Park?",
+		"option":{
+			"0": "100 acres",
+			"1": "1000 acres",
+			"2": "10000 acres",
+			"3": "100000 acres"
+			},
+		"answer": "2"
+	},
+
+	{
+		"type": "mc",
+		"question": " Which Vancouver museum offers an exhibit of totem poles?",
+		"option":{
+			"0": " The Museum of Anthropology",
+			"1": "The Vancouver East Cultural Center",
+			"2": "The Botanical Gardens",
+			"3": "Vancouver Art Gallery"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "fill",
+		"question": "vancouver outlook located in _______ ",
+		"answer": "Harbour Center"
+	},
+
+	{
+		"type": "mc",
+		"question": " What park is here in vancouver?",
+		"option":{
+			"0": "New York",
+			"1": "Toronto",
+			"2": "San Franciso",
+			"3": "Los Angeles"
+			},
+		"answer": "2"
+	},
+
+	{
+		"type": "mc",
+		"question": " What is Vancouver tallest building?",
+		"option":{
+			"0": "Harbour Centre",
+			"1": "Living Shangri-la",
+			"2": "Sheraton One Wall centre",
+			"3": "Shaw Tower"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "Vancouver has various exotic flowers such as the magnolias, azaleas, and?",
+		"option":{
+			"0": "billbergias",
+			"1": "rhododendrons",
+			"2": "villavallelongas",
+			"3": "parma violets"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": " What does the vancouver aquarium rank at the world?",
+		"option":{
+			"0": "15",
+			"1": "10",
+			"2": "5",
+			"3": "20"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "fill",
+		"question": "_______ is renowned for its scenery and has one of the largest urban parks in North America.",
+		"answer": "Stanley Park"
+	},
+
+
+	{
+		"type": "fill",
+		"question": "_______ is the short name of vancouver international airport.",
+		"answer": "YVR"
+	}
 
 ]

@@ -88,6 +88,7 @@
 			},
 		"answer": "1"
 	},
+
 	{
 		"type": "mc",
 		"question": "Which province is Vancouver part of?",
@@ -110,6 +111,7 @@
 			},
 		"answer": "1,3"
 	},
+	
 	{
 		"type": "check",
 		"question": "Simon Fraser University has campuses in 3 different cities. What are they? (Checkbox question)",

@@ -1,2 +1,128 @@
 [
+	{
+		"type": "mc",
+		"question": "The vancouver Canucks are named for Johnny Canuck. Who was he?",
+		"option":{
+			"0": "A political cartoon character",
+			"1": "A canadian explorer",
+			"2": "one of vancouver’s most famous hockey players",
+			"3": "one of vancouver’s first settlers"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "mc",
+		"question": "Vancouver Canucks joined NHL in:",
+		"option":{
+			"0": "1955",
+			"1": "1960",
+			"2": "1965",
+			"3": "1970"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which NBA player own lots of his own brand’s gym in vancouver?",
+		"option":{
+			"0": " Kobe Bryant",
+			"1": " Steve Nash",
+			"2": " Lebron James",
+			"3": "Tony Parker"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": " Which place is one of the skiing/snowboarding place in vancouver?",
+		"option":{
+			"0": "whistler",
+			"1": "grouse ",
+			"2": "cypress",
+			"3": "the big white"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "mc",
+		"question": " You can do the following activity for free on Christmas Day in robson square:",
+		"option":{
+			"0": "Skating",
+			"1": "Hockey",
+			"2": "Street dancing lesson",
+			"3": "Yoga Lesson"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "fill",
+		"question": "_______ is renowned for its scenery and has one of the largest urban parks in North America.",
+		"answer": "Stanley Park"
+	},
+
+	{
+		"type": "mc",
+		"question": "Vancouver Whitecaps FC is a local team for what sport activity?",
+		"option":{
+			"0": "Football",
+			"1": "Hockey",
+			"2": "Baseball",
+			"3": "Soccers"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
+		"question": "When is the Canucks established?",
+		"option":{
+			"0": "1945",
+			"1": "1955",
+			"2": "1965",
+			"3": "1975"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "check",
+		"question": "Which sports team are in Vancouver?",
+		"option":{
+			"0": "BC Lions",
+			"1": "Whitecaps FC",
+			"2": "Giant",
+			"3": "Canucks"			
+			},
+		"answer": "0,1,2,3"
+	},
+
+	{
+		"type": "check",
+		"question": "Past sports events in Vancouver include:",
+		"option":{
+			"0": "the 2002 World Junior Ice Hockey Championships",
+			"1": "the Canadian Open golf tournament (last held in Vancouver in 2011)",
+			"2": "the Molson Indy Vancouver Champ Car race (held 1990-2004)",
+			"3": "the 2007 FIFA U-20 World Cup held at Swangard Stadium"			
+			},
+		"answer": "0,1,2,3"
+	},
+
+	{
+		"type": "fill",
+		"question": "Vancouver Stanley Cup riot happen in _______.",
+		"answer": "2011"
+	},
+
+
+	{
+		"type": "fill",
+		"question": "vancouver host the winter Olympic festival in _______ .",
+		"answer": "2010"
+	}
 ]
