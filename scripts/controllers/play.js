@@ -17,13 +17,15 @@ angular.module('vancouverApp')
     $scope.formData = {}; //answers received from user
     var q_lists = [];//array of questions    
     var q_index = 0; //start from 0
-    var q_limit = 2; //6 questions per try
+    var q_limit = 6; //6 questions per try
     var timerInterval; //setInterval for timer
 
     //if the current_category is 'none', it means that the user refreshed the page or manually typed the url path
     if(globals.current_category == "none"){
       //navigatge back to home
-      $location.path('/home');
+      
+      //$location.path('/home');
+      globals.current_category = "geography";
     }
 
     //retrieve the questions list from JSON file
@@ -107,6 +109,9 @@ angular.module('vancouverApp')
 
         timerStart();
 
+        //fill progress bar
+        fillProgressBar(q_index);
+
         //retrieve content from list
         $scope.question = q_lists[q_index].question;
         $scope.q_type = q_lists[q_index].type;
@@ -137,6 +142,13 @@ angular.module('vancouverApp')
         }else if($scope.isFill){
             //do nothing
         }
+    }
+
+    function fillProgressBar(index){
+      index++;
+      console.log("aa");
+      $("#p"+index).css("background-color","#78c192");
+      console.log("bb");
     }
 
 

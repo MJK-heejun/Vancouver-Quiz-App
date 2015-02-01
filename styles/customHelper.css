@@ -42,3 +42,19 @@
 .height-100{
   height: 100%;
 }
+
+.tac{
+  text-align: center;
+}
+
+.lato-semi-bold{
+  font-family: 'LatoSemibold', Georgia;
+}
+
+.pos-rel{
+  position: relative;
+}
+
+.pos-abs{
+  position: absolute;
+}

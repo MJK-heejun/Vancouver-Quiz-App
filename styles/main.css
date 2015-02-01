@@ -12,8 +12,14 @@ body{
   /*background-color: #3bab62;*/
 }
 
-.width-100{
-  width: 100%;
+/* 적용 안됨 시발
+.p-bar-row{
+	height: 14pt;
+	border: 1px solid black;
 }
+*/
 
-
+.p-bar-col{
+	height: 14pt;
+	color: #78c192;
+}
