@@ -75,14 +75,18 @@
 
 <div ng-if="isMc">    
   <div ng-repeat="(value, option) in option" >
-    <div class="row vertical-align">
+    <div class="row">
       <div class="col-xs-1">
       </div>
-      <div class="col-xs-2 option-button">
-        <input type="radio" ng-model="formData.mc_val" value="{{value}}" />
+      <div class="col-xs-2 option-button vertical-align-table-p">
+        <div class="vertical-align-table-c">
+          <input type="radio" ng-model="formData.mc_val" value="{{value}}" />
+        </div>
       </div>
-      <div class="col-xs-8 option-button" >
-        <div>{{option}}</div>
+      <div class="col-xs-8 option-button vertical-align-table-p" >
+        <div class="vertical-align-table-c">
+          {{option}}
+        </div>
       </div>
       <div class="col-xs-1">
       </div>                              
@@ -96,13 +100,17 @@
     <div class="row">
       <div class="col-xs-1">
       </div>
-      <div class="col-xs-2 option-button">
-        <input type="checkbox" 
-        checklist-model="formData.check_val" 
-        checklist-value="value" />
+      <div class="col-xs-2 option-button vertical-align-table-p">
+        <div class="vertical-align-table-c">
+          <input type="checkbox" 
+          checklist-model="formData.check_val" 
+          checklist-value="value" />
+        </div>
       </div>
-      <div class="col-xs-8 option-button">
-        {{option}}
+      <div class="col-xs-8 option-button vertical-align-table-p">
+        <div class="vertical-align-table-c">
+          {{option}}
+        </div>
       </div>
       <div class="col-xs-1">
       </div>                              

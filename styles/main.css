@@ -42,3 +42,18 @@ body{
 .option-button2{
 	background-color: #78c192;
 }
+
+/*
+<div class="span6 center">
+<label> new label</label>
+</div>
+
+.center{
+    width : 100px;
+    height : 100px;
+    display : table-cell;
+    vertical-align : middle;
+    border : 1px solid red;
+    float:none;
+}
+*/
