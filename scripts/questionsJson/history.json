@@ -1,21 +1,172 @@
 [
 
 	{
-		"type": "multiple_choice",
+		"type": "mc",
+		"question": "Every evening, Vancouverites hear the boom of the Nine o’clock gun, an english cannon that was installed in Stanley Park in 1894. What was its original purpose?",
+		"option":{
+			"0": "To help synchronize ship’s chronometers",
+			"1": "To remind locals of the park’s nightly closing",
+			"2": "To honor fishermen who died at sea",
+			"3": "To remember British naval captain George Vancouver"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
 		"question": "In what year is Vancouver established?",
 		"option":{
-			"a": "1666",
-			"b": "1766",
-			"c": "1866",
-			"d": "1901"
+			"0": "1666",
+			"1": "1766",
+			"2": "1866",
+			"3": "1901"
 			},
-		"answer": "c"
+		"answer": "2"
 	},
+
 	{
-		"type": "fill_in",
+		"type": "mc",
+		"question": "The date of first Tim Horton opened in Vancouver is:",
+		"option":{
+			"0": "15 of June 1994",
+			"1": "15 of June 1991",
+			"2": "15 of June 1988",
+			"3": "15 of June 1985"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "mc",
+		"question": "Granville Island Brewing Company was founded in 1984 by:",
+		"option":{
+			"0": "Steve Jobs",
+			"1": "Mitch Taylor",
+			"2": "Bonita Granville",
+			"3": "Granville T. Woods"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which country won the most gold medals in Vancouver Winter Olympic 2010?",
+		"option":{
+			"0": "Canada",
+			"1": "China",
+			"2": "Russia",
+			"3": "United States"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "mc",
+		"question": "Terry Fox, Canadian athlete, humanitarian, was a distance runner and basketball player for which school?",
+		"option":{
+			"0": "University of British Columbia",
+			"1": "Simon Fraser University",
+			"2": "Capilano College",
+			"3": "University of Victoria"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "Who was the first mayor of Vancouver?",
+		"option":{
+			"0": "R. A. anderson",
+			"1": "Truman Smith Baxter",
+			"2": "Tom Campbell",
+			"3": "M.A. MacLean"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which year did the first Canadian Pacific RailWay train arrived in Vancouver?",
+		"option":{
+			"0": "1883",
+			"1": "1885",
+			"2": "1887",
+			"3": "1889"
+			},
+		"answer": "2"
+	},
+
+	{
+		"type": "mc",
+		"question": "What happened in August 7, 1971 in Gastown that made headlines, brought in the cops, and made a lot of people angry?",
+		"option":{
+			"0": "The Grey Cup Riot (Canucks game loss)",
+			"1": "The Gastown Riot (Marijuana laws protest)",
+			"2": "The Stanley Cup Riot (Canucks game loss)"
+			
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "In June 1, 1967, which big chain restaurant opened in Richmond, the first Canadian location?",
+		"option":{
+			"0": "McDonald’s",
+			"1": "Wendy’s",
+			"2": "Burger King's",
+			"3": "Tim Horton’s"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "mc",
+		"question": "On May 25, 1868, the capital of BC was moved to Victoria from",
+		"option":{
+			"0": "Vancouver",
+			"1": "Surrey",
+			"2": "Richmond",
+			"3": "New Westminster"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which of the group in BC was awarded the right to vote on April 5, 1917?",
+		"option":{
+			"0": "Natives",
+			"1": "Women",
+			"2": "Chinese",
+			"3": "Japanese"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "The first female police officers in Canada were hired by the Vancouver Police Department in 1912. They wore long skirts with no weapons.",
+		"option":{
+			"0": "True",
+			"1": "False"
+			
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "fill",
 		"question": "The city Vancouver were named after Captain _______ Vancouver who was an English officer of the British Royal Navy.",
 		"answer": "george"
+	},
+
+	{
+		"type": "fill",
+		"question": "In Vancouver Expo 86, 14 million paying visitors were predicted by organizers. However, ____ million people actually visited. (answer using natural numeric numbers only)",
+		"answer": "22"
 	}
 
+	
 
 ]
