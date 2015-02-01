@@ -46,6 +46,9 @@
 .tac{
   text-align: center;
 }
+.tal{
+  text-align: left;
+}
 
 .lato-semi-bold{
   font-family: 'LatoSemibold', Georgia;
@@ -57,4 +60,27 @@
 
 .pos-abs{
   position: absolute;
+}
+
+.pos-fix{
+  position: fixed;
+}
+
+.vertical-align{
+    display: flex;
+    align-items: center;
+}
+
+.vertical-align-table-p{
+  display: table;
+}
+
+.vertical-align-table-c{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.margin-tb-auto{
+  margin-top: auto;
+  margin-bottom: auto;
 }
