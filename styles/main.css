@@ -23,3 +23,22 @@ body{
 	height: 14pt;
 	color: #78c192;
 }
+
+.option-button{
+	height: 60px;
+	background-color: #78c192;
+
+	border: 1px solid #78c192;
+	
+
+	color: #ddeee3;
+	font-family: 'LatoLight', Georgia;
+	font-size: 14pt;
+
+	margin-bottom: 10px;
+}
+
+
+.option-button2{
+	background-color: #78c192;
+}
