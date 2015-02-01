@@ -1,2 +1,169 @@
 [
+	{
+		"type": "mc",
+		"question": "How much does Vancouver’s film industry contribute every year to British Columbia’s economy?",
+		"option":{
+			"0": "50 million",
+			"1": "90 million",
+			"2": "190 million",
+			"3": "1 billion"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
+		"question": "B.C.-native Taylor Kitsch played this hero in X-Men Origins: Wolverine. Name him.",
+		"option":{
+			"0": "Cyclops",
+			"1": "Iceman",
+			"2": "Colossus",
+			"3": "Gambit"
+			},
+		"answer": "3"
+	},
+
+	{
+		"type": "mc",
+		"question": "Seth Rogen stars in a movie directed and written by Sarah Polley. Name it.",
+		"option":{
+			"0": "Away from Her",
+			"1": "Splice",
+			"2": "Take This Waltz",
+			"3": "Mr. Nobody"
+			},
+		"answer": "2"
+	},
+
+	{
+		"type": "mc",
+		"question": "These movies, with names that remind us of Christmas, all pretend to have settings in the USA, but one was entirely filmed in B.C. Can you guess which one?",
+		"option":{
+			"0": "Reindeer Games",
+			"1": "Elf",
+			"2": "Noel",
+			"3": "Jingle All The Way"
+			},
+		"answer": "0"
+	},
+
+	{
+		"type": "mc",
+		"question": "Although it is set in 2015 USA, this 2000 film, starring Arnold Schwarzenegger, was filmed mostly in B.C. In fact, the Cloning Lab is actually the Vancouver Public Library, and the Replacement Technologies head-office is McMath High School in Richmond! Which movie is it?",
+		"option":{
+			"0": "Terminator 3: Rise of the Machines",
+			"1": "The Sixth Day",
+			"2": "Collateral Damage",
+			"3": "End of Days"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "Who plays Lana Lang in Smallville?",
+		"option":{
+			"0": "Allison Mack",
+			"1": "Kristin Kreuk",
+			"2": "Anette O´Toole",
+			"3": "Erica Darnac"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which of the following actors/actress from the Matrix movies is from Vancouver?",
+		"option":{
+			"0": "Keanu Reeves (Neo)",
+			"1": "Laurence Fishburne (Morpheus)",
+			"2": "Carrie-Anne Moss (Trinity)",
+			"3": "Hugo Weaving (Agent Smith)"
+			},
+		"answer": "2"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which of these actress/actors who played in The Avengers, and Captain America: The Winter Soldier is from Vancouver?",
+		"option":{
+			"0": "Chris Evans",
+			"1": "Cobie Smulders",
+			"2": "Samuel L. Jackson",
+			"3": "Scarlett Johansson"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "mc",
+		"question": "Which of these actors is from Vancouver and won the MTV Movie Awards for Best Fight in The Hunger Games?",
+		"option":{
+			"0": "Josh Hutcherson",
+			"1": "Alexander Ludwig",
+			"2": "Wes Bentley",
+			"3": "Liam Hemsworth"
+			},
+		"answer": "1"
+	},
+
+	{
+		"type": "fill",
+		"question": "Who is the actor who starred in The Guilt Trip, Knocked Up, and Superbad?",
+		"answer": "seth rogen"
+	},
+
+	{
+		"type": "fill",
+		"question": "Ryan Reynolds played this DC hero in a 2011 feature film. Name him.",
+		"answer": "green lantern"
+	},
+
+	{
+		"type": "fill",
+		"question": "Which of Will Smith’s movies were filmed in Vancouver?",
+		"answer": "i robot"
+	},
+
+	{
+		"type": "fill",
+		"question": "Megan Fox's attempt to break free of her Transformers type-casting got off to a rocky start with this 2009 box-office dud. She plays a flesh-eating succubus who terrorizes an American town, although many of the scenes were filmed in B.C. What film is it?",
+		"answer": "jennifer's body"
+	},
+
+	{
+		"type": "check",
+		"question": "What is the actress Chasty Ballesteros from Vancouver is known for Choose two?",
+		"option":{
+			"0": "Final Destination 5",
+			"1": "We’re the Millers",
+			"2": "The internship",
+			"3": "Wedding Crashers"			
+			},
+		"answer": "0,2"
+	},
+
+	{
+		"type": "check",
+		"question": "Which of these two movies that Ellen Page played in was filmed in Vancouver?",
+		"option":{
+			"0": "Labor Day",
+			"1": "X-Men: The Last Stand",
+			"2": "Up in the Air",
+			"3": "Juno"			
+			},
+		"answer": "1,3"
+	},
+
+	{
+		"type": "check",
+		"question": "The Interview was filmed in Vancouver, which two actors/actresses are from Vancouver?",
+		"option":{
+			"0": "Seth Rogen",
+			"1": "James Franco",
+			"2": "Lizzy Caplan",
+			"3": "Diana Bang"			
+			},
+		"answer": "0,3"
+	}
 ]
