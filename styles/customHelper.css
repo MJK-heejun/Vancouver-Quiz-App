@@ -71,3 +71,16 @@
     align-items: center;
 }
 
+.vertical-align-table-p{
+  display: table;
+}
+
+.vertical-align-table-c{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.margin-tb-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
