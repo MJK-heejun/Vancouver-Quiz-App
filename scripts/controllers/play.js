@@ -23,7 +23,9 @@ angular.module('vancouverApp')
     //if the current_category is 'none', it means that the user refreshed the page or manually typed the url path
     if(globals.current_category == "none"){
       //navigatge back to home
-      $location.path('/home');
+      
+      //$location.path('/home');
+      globals.current_category = "geography";
     }
 
     //retrieve the questions list from JSON file
@@ -50,6 +52,15 @@ angular.module('vancouverApp')
       //start the question!!
 	    getCurrentIndexQuestion();
     });
+
+
+    //used for the progress bar
+    $scope.get_q_index = function(){
+      return q_index;
+    };
+    $scope.get_q_limit = function(){
+      return q_limit;
+    };
 
 
     $scope.submitAnswer = function(){
@@ -98,6 +109,9 @@ angular.module('vancouverApp')
 
         timerStart();
 
+        //fill progress bar
+        fillProgressBar(q_index);
+
         //retrieve content from list
         $scope.question = q_lists[q_index].question;
         $scope.q_type = q_lists[q_index].type;
@@ -130,10 +144,17 @@ angular.module('vancouverApp')
         }
     }
 
+    function fillProgressBar(index){
+      index++;
+      console.log("aa");
+      $("#p"+index).css("background-color","#78c192");
+      console.log("bb");
+    }
+
 
     function timerStart(){
 
-      $scope.time_limit = 10; //seconds
+      $scope.time_limit = 9999; //seconds
 
       timerInterval = $interval(function(){      
           $scope.time_limit -= 1;
@@ -156,56 +177,5 @@ angular.module('vancouverApp')
     );   
 
 
-    $scope.get_q_index = function(){
-      return q_index;
-    };
-    $scope.get_q_limit = function(){
-      return q_limit;
-    };
 
-
-
-/*
-    function setScoreToZero(category){
-        switch(category){
-          case "attractions":   
-            globals.attractions_score = 0;     
-          break;
-          case "entertainment":
-            globals.entertainment_score = 0;
-          break;
-          case "geography":
-            globals.geography_score = 0;
-          break;
-          case "history":
-            globals.history_score = 0;
-          break;
-          case "sports":
-            globals.sports_score = 0;
-          break;
-          default:          
-        }        
-    }
-
-    function addScore(category){
-        switch(category){
-          case "attractions":   
-            globals.attractions_score += 10;     
-          break;
-          case "entertainment":
-            globals.entertainment_score += 10;
-          break;
-          case "geography":
-            globals.geography_score += 10;
-          break;
-          case "history":
-            globals.history_score += 10;
-          break;
-          case "sports":
-            globals.sports_score += 10;
-          break;
-          default:          
-        }        
-    }
-*/
 });

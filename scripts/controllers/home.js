@@ -33,18 +33,3 @@ angular.module('vancouverApp')
 
 
 
-/*
-angular.module('vancouverApp')
-  .controller('HomeCtrl', ['score', function ($scope, $rootScope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-
-    //console.log(score.total);
-
-
-  }]);
-*/
-

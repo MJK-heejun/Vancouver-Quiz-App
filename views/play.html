@@ -1,41 +1,69 @@
-<div class="border">
-  <div classs="row">
-  	<div class="col-xs-12">
-  	timer ( 0:{{time_limit}})
-  	</div>
+
+
+
+<div classs="row padding-0 margin-0" 
+  style=" height: 16pt; 
+   border: 1px solid black;
+">
+  <div class="col-xs-2 p-bar-col padding-0 margin-0" id="p1">
+  </div>    
+  <div class="col-xs-2 p-bar-col" id="p2">
   </div>
-  <div classs="row">
-  	<div class="col-xs-12">
-  	progress bar {{get_q_index()+1}} / {{get_q_limit()}}
-  	</div>
+  <div class="col-xs-2 p-bar-col" id="p3">
   </div>
-  <div classs="row">
-  	<div class="col-xs-12">
-  		<div>
-        {{question}}
-      </div>
+  <div class="col-xs-2 p-bar-col" id="p4">
+  </div>
+  <div class="col-xs-2 p-bar-col" id="p5">
+  </div>                
+  <div class="col-xs-2 p-bar-col" id="p6">
+    {{get_q_index()+1}} /{{get_q_limit()}}
+  </div>
+</div>
 
-      <div ng-if="isMc">        
-        <div ng-repeat="(value, option) in option">
-          <input type="radio" ng-model="formData.mc_val" value="{{value}}" />{{option}}
-        </div>
-      </div>
 
-      <div ng-if="isCheck">
-        <div ng-repeat="(value, option) in option">
-          <input type="checkbox" checklist-model="formData.check_val" 
-          checklist-value="value" />{{option}}
-        </div>
-      </div>
 
-      <div ng-if="isFill">
-        <input type="text" ng-model="formData.fill_val" />
-      </div>
 
-      <div>
-        <button name="submit_button"  ng-click="submitAnswer()">Submit</button>         
-      </div>
+<div classs="row">
+	<div class="col-xs-12" 
+    style="font-family: 'LatoLight', Georgia; 
+      font-size: 12pt; 
+      text-align: center;">
+    {{question}}
+	</div>
+</div>
 
-  	</div>
+
+
+<div classs="row">
+  <div class="col-xs-12">
+    <div ng-if="isMc">        
+      <div ng-repeat="(value, option) in option">
+        <input type="radio" ng-model="formData.mc_val" value="{{value}}" />{{option}}
+      </div>
+    </div>
+
+    <div ng-if="isCheck">
+      <div ng-repeat="(value, option) in option">
+        <input type="checkbox" checklist-model="formData.check_val" 
+        checklist-value="value" />{{option}}
+      </div>
+    </div>
+
+    <div ng-if="isFill">
+      <input type="text" ng-model="formData.fill_val" />
+    </div>
+
+    <div>
+      <button name="submit_button"  ng-click="submitAnswer()">Submit</button>         
+    </div>
+  </div>
+</div>
+
+
+
+
+<div classs="row">
+  <div class="col-xs-12">
+  timer ( 0:{{time_limit}})
   </div>
 </div>

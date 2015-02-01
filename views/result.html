@@ -35,14 +35,20 @@
 
 			Question: {{q_object.question}}<br/>
 
-			<div ng-if="q_object.type=='mc'">   
+			<div ng-if="q_object.type=='mc'">   				
+				<div ng-repeat="options in q_object.option">
+					{{options}}
+				</div>
 				Answer: {{q_object.option[q_object.answer]}}
 			</div>
-			<div ng-if="q_object.type=='option'">   
+			<div ng-if="q_object.type=='check'">   
+				<div ng-repeat="options in q_object.option">
+					{{options}}
+				</div>				
 				Answer: {{q_object.answer}}
 			</div>		
 			<div ng-if="q_object.type=='fill'">   
-				Answer: {{q_object.answer}}
+				Answer: {{q_object.answer | capitalize}}
 			</div>
 		</div>			
 	</div>

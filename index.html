@@ -20,7 +20,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="Lato/Lato-Light.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="Lato/Lato-Semibold.css" />
 
-    <link rel="stylesheet" media="(min-width: 570px)" href="styles/min-768px.css">
+    <link rel="stylesheet" media="(min-width: 643px)" href="styles/min-768px.css">
 
 <!--
     <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
@@ -38,19 +38,25 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-        <div class="row border-b">
-            <div class="col-xs-4 header border-g">
-                <img src="images/home.png" />
+        <div class="row">
+            <div class="col-xs-2">
+                <img src="images/home.png" class="width-100"/>
             </div>
-            <div class="col-xs-8 header border-g" style="font-family: 'LatoSemibold', Georgia;">
-                 Home Change cool
-            </div>                
+            <div class="col-xs-8 tac lato-semi-bold pos-rel border-b" 
+                style="font-size: 16pt;
+                    lien-height: 100px;">
+                <p class="pos-abs"   >
+                    Home
+                </p>
+            </div> 
+            <div class="col-xs-2">
+            </div>               
         </div>
 
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 padding-0">
                 <div class="view_container">
-                    <div class="page {{pageClass}} border" ng-view=""></div>
+                    <div class="page {{pageClass}} " ng-view=""></div>
                 </div>
             </div>
         </div>
