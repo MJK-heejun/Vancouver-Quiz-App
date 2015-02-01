@@ -17,7 +17,7 @@ angular.module('vancouverApp')
     $scope.formData = {}; //answers received from user
     var q_lists = [];//array of questions    
     var q_index = 0; //start from 0
-    var q_limit = 6; //6 questions per try
+    var q_limit = 2; //6 questions per try
     var timerInterval; //setInterval for timer
 
     //if the current_category is 'none', it means that the user refreshed the page or manually typed the url path
@@ -50,6 +50,15 @@ angular.module('vancouverApp')
       //start the question!!
 	    getCurrentIndexQuestion();
     });
+
+
+    //used for the progress bar
+    $scope.get_q_index = function(){
+      return q_index;
+    };
+    $scope.get_q_limit = function(){
+      return q_limit;
+    };
 
 
     $scope.submitAnswer = function(){
@@ -133,7 +142,7 @@ angular.module('vancouverApp')
 
     function timerStart(){
 
-      $scope.time_limit = 10; //seconds
+      $scope.time_limit = 9999; //seconds
 
       timerInterval = $interval(function(){      
           $scope.time_limit -= 1;
@@ -156,56 +165,5 @@ angular.module('vancouverApp')
     );   
 
 
-    $scope.get_q_index = function(){
-      return q_index;
-    };
-    $scope.get_q_limit = function(){
-      return q_limit;
-    };
 
-
-
-/*
-    function setScoreToZero(category){
-        switch(category){
-          case "attractions":   
-            globals.attractions_score = 0;     
-          break;
-          case "entertainment":
-            globals.entertainment_score = 0;
-          break;
-          case "geography":
-            globals.geography_score = 0;
-          break;
-          case "history":
-            globals.history_score = 0;
-          break;
-          case "sports":
-            globals.sports_score = 0;
-          break;
-          default:          
-        }        
-    }
-
-    function addScore(category){
-        switch(category){
-          case "attractions":   
-            globals.attractions_score += 10;     
-          break;
-          case "entertainment":
-            globals.entertainment_score += 10;
-          break;
-          case "geography":
-            globals.geography_score += 10;
-          break;
-          case "history":
-            globals.history_score += 10;
-          break;
-          case "sports":
-            globals.sports_score += 10;
-          break;
-          default:          
-        }        
-    }
-*/
 });

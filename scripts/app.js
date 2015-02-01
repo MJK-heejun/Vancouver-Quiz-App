@@ -50,18 +50,11 @@ app.value('globals',{
   current_category: "none",
   q_lists : "",
   q_lists_submitted: ""
-  /*,
-  total_score : 0,
-  attractions_score : 0,
-  entertainment_score : 0,
-  geography_score : 0,
-  history_score : 0,
-  sports_score : 0
-  */
+
 });
 
 
-
+//used as global object
 app.factory('score', function(){
   var score = {}; //object declaration
 
@@ -143,6 +136,15 @@ app.factory('score', function(){
   return score;
 });
 
+
+//Filter for Capitalizing the first letter
+app.filter('capitalize', function() {
+  return function(input, scope) {
+    if (input!=null)
+    input = input.toLowerCase();
+    return input.substring(0,1).toUpperCase()+input.substring(1);
+  }
+});
 
 
 
