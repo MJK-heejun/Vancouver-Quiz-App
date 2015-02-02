@@ -1,62 +1,76 @@
-<div class="jumbotron">
-  The total score = {{total_current_category_score}}
-
-<!--
-	<div 
-		ng-animate="animate" 
-		ng-repeat="q_object in q_lists" 
-		class="border" 
-		ng-show="isCurrentIndex($index)" 
-		ng-swipe-left="swipeAction(-1)" 
-		ng-swipe-right="swipeAction(1)" >
-		Question: {{q_object.question}}<br/>
-		
-		<div ng-if="q_object.type=='mc'">   
-			Answer: {{q_object.option[q_object.answer]}}
-		</div>
-		<div ng-if="q_object.type=='option'">   
-			Answer: {{q_object.answer}}
-		</div>		
-		<div ng-if="q_object.type=='fill'">   
-			Answer: {{q_object.answer}}
-		</div>
-
-		
-	</div>
--->
-
-	<div ng-repeat="q_object in q_lists" ng-switch on="isCurrentIndex($index)">
-		<div 
-			class="border" 
-			ng-animate="'animate'"
-			ng-switch-when="true"
-			ng-swipe-left="swipeAction(-1)" 
-			ng-swipe-right="swipeAction(1)" >
-
-			Question: {{q_object.question}}<br/>
-
-			<div ng-if="q_object.type=='mc'">   				
-				<div ng-repeat="options in q_object.option">
-					{{options}}
-				</div>
-				Answer: {{q_object.option[q_object.answer]}}
-			</div>
-			<div ng-if="q_object.type=='check'">   
-				<div ng-repeat="options in q_object.option">
-					{{options}}
-				</div>				
-				Answer: {{q_object.answer}}
-			</div>		
-			<div ng-if="q_object.type=='fill'">   
-				Answer: {{q_object.answer | capitalize}}
-			</div>
-		</div>			
-	</div>
-
-
-
-  <p>
-  	<a href="#/home">back to main page</a><br/>
-  	<a href="#/play">try again</a>
-  </p>
+<div class="row">
+	<div class="col-xs-12 lato-light tac">
+  		SCORE: {{total_current_category_score}}
+  	</div>
 </div>
+
+
+<div class="width-80 margin-lr-auto result-page-container">	
+	<div class="answer-panel">
+
+		<div ng-repeat="q_object in q_lists" ng-switch on="isCurrentIndex($index)">
+			<div 
+				ng-animate="'animate'"
+				ng-switch-when="true"
+				ng-swipe-left="swipeAction(-1)" 
+				ng-swipe-right="swipeAction(1)" >
+
+				<div class="lato-light tac" style="font-size: 14pt;">
+					{{q_object.question}}<br/>
+				</div>
+
+				<div ng-if="q_object.type=='mc'">   				
+					<div 
+						ng-repeat="options in q_object.option"
+						class="tac answer-panel-option-button vertical-align-table-p">
+						<div class="vertical-align-table-c">
+							{{options}}
+						</div>	
+					</div>
+					<div class="timer">
+						Answer: {{q_object.option[q_object.answer]}}
+					</div>
+				</div>
+				<div ng-if="q_object.type=='check'">   
+					<div 
+						ng-repeat="options in q_object.option"
+						class="tac answer-panel-option-button vertical-align-table-p">
+						<div class="vertical-align-table-c">
+							{{options}}
+						</div>
+					</div>
+					<div class="timer">		
+						Answer: 
+						<div ng-repeat="index_val in q_object.answer track by $index">
+							{{q_object.option[index_val]}}
+						</div>
+					</div>
+				</div>		
+				<div ng-if="q_object.type=='fill'"
+					class="timer">   
+					Answer: {{q_object.answer | capitalize}}
+				</div>
+			</div>			
+		</div>
+
+		<div class="margin-lr-auto width-30 display-t margin-lr-auto ">
+			<div ng-repeat="n in [] | range: q_length" 
+				class="float-left">
+				<div ng-if="n == q_index" class="swipe-icon-colored">
+				</div>
+				<div ng-if="n != q_index" class="swipe-icon">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="answer-panel-bot vertical-align-table-p">
+		<div class="float-left width-50 vertical-align-table-c">
+			<a href="#/play">Try Again</a>
+		</div>
+		<div class="float-left width-50 vertical-align-table-c">
+			<a href="#/home">Main Page</a>
+		</div>		
+	</div>
+</div>
+

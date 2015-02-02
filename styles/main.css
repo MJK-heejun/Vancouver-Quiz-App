@@ -82,3 +82,65 @@ body{
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5ab37a), color-stop(20%, #5ab37a));
     outline: 0;
 }
+
+
+.result-page-container{
+	background-color: #78c192;
+    padding: 10px;
+}
+
+.answer-panel{
+    background-color: white;
+    padding: 10px;
+}
+
+.answer-panel-bot{
+    width: 100%;
+    text-align: center;
+    background-color: #78c192;
+    padding: 10px;
+}   
+
+.answer-panel-bot > div{
+    background-color: #78c192;
+}
+
+
+.answer-panel-option-button{
+    height: 60px;
+    background-color: #78c192;
+    width: 100%;
+
+    border: 1px solid #78c192;
+    
+
+    color: #ddeee3;
+    font-family: 'LatoLight', Georgia;
+    font-size: 14pt;
+
+    margin-bottom: 10px;
+}
+
+
+
+.swipe-icon{
+    background-color: white;
+    border: 1px solid #333;
+    height: 20px;
+    width: 20px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+
+    margin: 1px;
+}
+
+.swipe-icon-colored{
+    background-color: blue;
+    border: 1px solid #333;
+    height: 20px;
+    width: 20px;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+
+    margin: 1px;    
+}

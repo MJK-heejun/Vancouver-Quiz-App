@@ -30,7 +30,8 @@ angular.module('vancouverApp')
       if($scope.q_index < 0)
         $scope.q_index = $scope.q_length - 1;
       else if($scope.q_index >= $scope.q_length)
-        $scope.q_index = 0;      
+        $scope.q_index = 0;   
+
     };
 
     $scope.isCurrentIndex = function(index){
@@ -40,7 +41,9 @@ angular.module('vancouverApp')
         return false;
     };
 
-    
+
+
+
 
     
 
