@@ -50,7 +50,7 @@ angular.module('vancouverApp')
     //if -1, it means that the user refreshed or manually opened the page
     if($scope.total_current_category_score == -1){
       //navigate back to home
-      //$location.path('/home');
+      $location.path('/home');
     }
 
 
