@@ -13,7 +13,6 @@ angular.module('vancouverApp')
     //$scope.headerText = globals.current_category;
     $scope.pageClass = 'page-play';
 
-
     $scope.formData = {}; //answers received from user
     var q_lists = [];//array of questions    
     var q_index = 0; //start from 0
@@ -25,8 +24,9 @@ angular.module('vancouverApp')
       //navigatge back to home
       
       $location.path('/home');
-      //globals.current_category = "geography";
     }
+
+
 
     //retrieve the questions list from JSON file
     //$http.get('scripts/questionsJson/'+globals.current_category+'.json').then(function(res){

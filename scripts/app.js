@@ -49,7 +49,8 @@ var app = angular.module('vancouverApp');
 app.value('globals',{
   current_category: "none",
   q_lists : "",
-  q_lists_submitted: ""
+  q_lists_submitted: "",
+  current_page: ""
 
 });
 
@@ -68,8 +69,8 @@ app.factory('score', function(){
     return score.attractions + score.entertainment + score.geography + score.history + score.sports;
   }
 
-  score.setToZero = function(categorsy){
-    switch(categorsy){
+  score.setToZero = function(category){
+    switch(category){
       case "attractions":   
         score.attractions = 0;     
       break;

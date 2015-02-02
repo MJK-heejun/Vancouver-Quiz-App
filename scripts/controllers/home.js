@@ -16,14 +16,24 @@ angular.module('vancouverApp')
     //$scope.headerText = 'Home';
     $scope.pageClass = 'page-home';
 
+    globals.current_page = "Home";
+
+
     $scope.total_score = score.getTotalScore();
 
 
     $scope.chooseCategory = function(category){
-      globals.current_category = category;
+    	//if chose random, get a random category
+		if(category == 'random'){
+    		var cat_arr = ["sports", "attractions", "entertainment", "history", "geography"];
+    		//random number from 0 to 4
+			var ran_num = Math.floor((Math.random() * 4 ));    					
+			category = cat_arr[ran_num];
+		}
 
-      if(category == 'geography')
-        $location.path('/play');
+    	globals.current_category = category;
+
+   		$location.path('/play');
     }
 
 
