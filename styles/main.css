@@ -144,3 +144,22 @@ body{
 
     margin: 1px;    
 }
+
+#score{
+    padding-top: 15pt;
+    margin-bottom: 10pt;
+    text-align: center;
+    font-size: 25pt;
+    color: #6F7070;
+    border: 1px solid #333;
+    width: 672px;
+}
+
+#home{
+    font-size: 35pt;
+    margin: 10pt;
+   /* border: 1px solid #333;*/
+    color: #93CD91;            
+}
+
+.view_container
