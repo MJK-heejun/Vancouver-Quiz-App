@@ -1,9 +1,9 @@
 
 
-
+<div class="container">
 <div class="row padding-0 margin-0" 
   style=" height: 16pt; 
-   border: 1px solid black;
+   border: 1px solid #AAA9A9;
 ">
   <div class="col-xs-2 p-bar-col padding-0 margin-0" id="p1">
   </div>    
@@ -24,7 +24,7 @@
 
 <div class="row">
 	<div class="col-xs-12 lato-light tac" 
-    style="font-size: 12pt;">
+    style="font-size: 30pt;">
     {{question}}
 	</div>
 </div>
@@ -82,30 +82,38 @@
     <div class="col-xs-2">
     </div>        
     <div class="col-xs-8">
-      <input class="textbox" type="text" ng-model="formData.fill_val" />
+     <!--  <input class="textbox" type="text" ng-model="formData.fill_val" /> -->
+
+     <div class="row" id="input">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Your Answer.. ">
+        </div><!-- /input-group -->
+    </div><!-- /.row -->
+
+
+
+
     </div>        
     <div class="col-xs-2">
     </div>                        
   </div>
 </div>
 
-
-
-<div class="row">
-  <div class="col-xs-9">
-  </div>
-  <div class="col-xs-3">
-    <button name="submit_button"  ng-click="submitAnswer()">Submit</button>
-  </div>
-</div>
-
-
-
-
-
-
 <div class="row timer">
   <div class="col-xs-12">
     0:{{time_limit}}
   </div>
+</div>
+
+<div class="row">
+
+  <div class="col-xs-3" id="button">
+      <button type="button" class="btn btn-default btn-lg" name="submit_button"  ng-click="submitAnswer()">
+    <span aria-hidden="true" id="button"></span> Submit 
+  </button>
+  
+ </div>
+
+</div>
+
 </div>
