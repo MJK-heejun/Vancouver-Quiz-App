@@ -195,5 +195,20 @@ body{
 }
 
 #button{
-    margin-top: 30px;
+    margin-top: 30px; 
+    /*border: 1px solid #333;*/
+    padding-left: 260px;  
+}
+
+.timer{
+    font-size: 30pt;
+}
+
+.btn-xlarge {
+    padding: 48px 58px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
 }
