@@ -186,6 +186,7 @@ angular.module('vancouverApp')
       if(q_type == "mc"){
         $scope.formData.mc_val = this.value;  
       }else if(q_type == "check"){
+
         //if the value not in the array, push into the array
         if($.inArray(this.value, $scope.formData.check_val) == -1 ){
           $scope.formData.check_val.push(this.value);
