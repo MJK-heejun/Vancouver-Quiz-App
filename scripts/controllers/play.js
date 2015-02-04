@@ -182,14 +182,6 @@ angular.module('vancouverApp')
 
     
     $scope.buttonClick = function(q_type){
-      //console.log(this);
-/*
-      var tmp_val = this.value;
-      console.log($('input[value='+tmp_val+']'));
-      $('input[value='+tmp_val+']').attr('ng-checked', true);
-      */
-      //console.log($scope.formData.mc_val);
-console.log("aaa");
 
       if(q_type == "mc"){
         $scope.formData.mc_val = this.value;  
