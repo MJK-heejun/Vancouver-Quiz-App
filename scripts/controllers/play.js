@@ -194,6 +194,8 @@ angular.module('vancouverApp')
 		  }catch(err){
 			console.log(err);
 			console.log(this);
+			console.log($scope.formData);
+			console.log($scope.formData.check_val);
 		  }
           
         //or if it's already in the array, pull it out
