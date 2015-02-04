@@ -189,7 +189,13 @@ angular.module('vancouverApp')
 
         //if the value not in the array, push into the array
         if($.inArray(this.value, $scope.formData.check_val) == -1 ){
-          $scope.formData.check_val.push(this.value);
+		  try{
+			$scope.formData.check_val.push(this.value);
+		  }catch(err){
+			console.log(err);
+			console.log(this);
+		  }
+          
         //or if it's already in the array, pull it out
         }else{
           var tmp_i = $scope.formData.check_val.indexOf(this.value);
