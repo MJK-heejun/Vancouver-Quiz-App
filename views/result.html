@@ -15,7 +15,17 @@
 				ng-swipe-left="swipeAction(1)" 
 				ng-swipe-right="swipeAction(-1)" >
 
-				<div class="lato-light tac" style="font-size: 35pt;">
+				<div class="margin-lr-auto display-t margin-lr-auto " style="padding-bottom: 15px;">
+			<div ng-repeat="n in [] | range: q_length" 
+				class="float-left">
+				<div ng-if="n == q_index" class="swipe-icon-colored">
+				</div>
+				<div ng-if="n != q_index" class="swipe-icon">
+				</div>
+			</div>
+		</div>
+
+				<div class="lato-light tac" style="font-size: 15pt; font-weight: bold;">
 					{{q_object.question}}<br/>
 				</div>
 
@@ -27,7 +37,7 @@
 							{{options}}
 						</div>	
 					</div>
-					<div class="timer" style="font-size: 20pt;">
+					<div class="timer" style="font-size: 15pt;">
 						Answer: {{q_object.option[q_object.answer]}}
 					</div>
 				</div>
@@ -39,7 +49,7 @@
 							{{options}}
 						</div>
 					</div>
-					<div class="timer" style="font-size: 20pt;">		
+					<div class="timer" style="font-size: 15pt;">		
 						Answer: 
 						<div ng-repeat="index_val in q_object.answer track by $index">
 							{{q_object.option[index_val]}}
@@ -47,13 +57,13 @@
 					</div>
 				</div>		
 				<div ng-if="q_object.type=='fill'"
-					class="timer" style="font-size: 20pt;">   
+					class="timer" style="font-size: 15pt;">   
 					Answer: {{q_object.answer | capitalize}}
 				</div>
 			</div>			
 		</div>
 
-		<div class="margin-lr-auto width-30 display-t margin-lr-auto ">
+		<!-- <div class="margin-lr-auto display-t margin-lr-auto ">
 			<div ng-repeat="n in [] | range: q_length" 
 				class="float-left">
 				<div ng-if="n == q_index" class="swipe-icon-colored">
@@ -61,7 +71,7 @@
 				<div ng-if="n != q_index" class="swipe-icon">
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 
