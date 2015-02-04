@@ -14,6 +14,10 @@ angular.module('vancouverApp')
   .controller('HomeCtrl', function ($scope, globals, $location, score) {
 
     $("#header-text").text("Home");
+    $("#big-home img").click(function(){
+        $location.path('/home');
+        $scope.$apply();
+    });
 
     globals.current_page = "Home";
 

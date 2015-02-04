@@ -11,7 +11,10 @@ angular.module('vancouverApp')
   .controller('ResultCtrl', function ($scope, globals, score, $location) {
 
     $("#header-text").text("Result");
-
+    $("#big-home img").click(function(){
+        $location.path('/home');
+        $scope.$apply();
+    });
 
     $scope.lions = false;
 

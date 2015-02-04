@@ -11,6 +11,10 @@ angular.module('vancouverApp')
   .controller('PlayCtrl', function ($scope, globals, $http, $location, score, $interval, $rootScope){
 
     $("#header-text").text(globals.current_category.charAt(0).toUpperCase() + globals.current_category.slice(1));
+    $("#big-home img").click(function(){
+        $location.path('/home');
+        $scope.$apply();
+    });
 
     $scope.formData = {}; //answers received from user
     var q_lists = [];//array of questions    
