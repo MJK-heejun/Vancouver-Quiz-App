@@ -102,16 +102,7 @@
 	},
 
 	{
-		"type": "check",
-		"question": "Past sports events in Vancouver include:",
-		"option":{
-			"0": "the 2002 World Junior Ice Hockey Championships",
-			"1": "the Canadian Open golf tournament (last held in Vancouver in 2011)",
-			"2": "the Molson Indy Vancouver Champ Car race (held 1990-2004)",
-			"3": "the 2007 FIFA U-20 World Cup held at Swangard Stadium"			
-			},
-		"answer": "0,1,2,3"
-	},
+
 
 	{
 		"type": "fill",

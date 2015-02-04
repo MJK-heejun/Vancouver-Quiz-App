@@ -89,8 +89,8 @@ body{
 
 
 .result-page-container{
-	background-color: #78c192;
-    padding: 10px;
+	background-color: #BFBDBD;
+    
 }
 
 .answer-panel{
@@ -101,8 +101,9 @@ body{
 .answer-panel-bot{
     width: 100%;
     text-align: center;
-    background-color: #78c192;
+/*    background-color: #BFBDBD;*/
     padding: 10px;
+    margin: 10px;
 }   
 
 .answer-panel-bot > div{
@@ -211,4 +212,22 @@ body{
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
             border-radius: 8px;
+}
+
+#resultfont{
+    font-size: 60pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #777C7C;
+}
+
+
+#redo-button{
+    margin-top: 20pt;
+    font-size: 30pt;
+}
+
+.retry{
+    color: #FFFFFF;
+    font-size: 25pt;
 }
