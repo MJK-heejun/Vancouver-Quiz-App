@@ -157,7 +157,7 @@ body{
     width: 672px;
 }
 
-#home{
+#header-text{
     font-size: 35pt;
     margin-right: 10pt;
     margin-left: 10pt;
@@ -179,7 +179,7 @@ body{
    /*background-color: #D8D6D6;*/
 }
 
-#Big-home{
+#big-home{
     /*border: 1px solid #333;*/
     border-bottom: 1px solid #BFBEBE;
    /* background-color: #D1D1D1;*/  
@@ -190,12 +190,12 @@ body{
     width: 450px;
 }
 
-#input{
+#input-textbox{
     margin-top: 30px;
     margin-bottom: 30px;    
 }
 
-#button{
+#submit-button{
     margin-top: 30px; 
     /*border: 1px solid #333;*/
     padding-left: 260px;  
@@ -214,7 +214,7 @@ body{
             border-radius: 8px;
 }
 
-#resultfont{
+#result-font{
     font-size: 60pt;
     margin-top: 10px;
     margin-bottom: 10px;
