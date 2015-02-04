@@ -1,12 +1,12 @@
 [
 	{
 		"type": "mc",
-		"question": "The vancouver Canucks are named for Johnny Canuck. Who was he?",
+		"question": "The Vancouver Canucks are named for Johnny Canuck. Who was he?",
 		"option":{
 			"0": "A political cartoon character",
 			"1": "A canadian explorer",
-			"2": "one of vancouver’s most famous hockey players",
-			"3": "one of vancouver’s first settlers"
+			"2": "One of vancouver’s most famous hockey players",
+			"3": "One of vancouver’s first settlers"
 			},
 		"answer": "0"
 	},
@@ -37,19 +37,19 @@
 
 	{
 		"type": "mc",
-		"question": " Which place is one of the skiing/snowboarding place in vancouver?",
+		"question": "Which place is one of the skiing/snowboarding place in vancouver?",
 		"option":{
-			"0": "whistler",
-			"1": "grouse ",
-			"2": "cypress",
-			"3": "the big white"
+			"0": "Whistler",
+			"1": "Grouse ",
+			"2": "Cypress",
+			"3": "The Big White"
 			},
 		"answer": "0"
 	},
 
 	{
 		"type": "mc",
-		"question": " You can do the following activity for free on Christmas Day in robson square:",
+		"question": "You can do the following activities for free on Christmas Day in robson square:",
 		"option":{
 			"0": "Skating",
 			"1": "Hockey",
@@ -79,7 +79,7 @@
 
 	{
 		"type": "mc",
-		"question": "When is the Canucks established?",
+		"question": "When was the Canucks established?",
 		"option":{
 			"0": "1945",
 			"1": "1955",
@@ -106,14 +106,14 @@
 
 	{
 		"type": "fill",
-		"question": "Vancouver Stanley Cup riot happen in _______.",
+		"question": "Vancouver Stanley Cup riot happened in the year of _______.",
 		"answer": "2011"
 	},
 
 
 	{
 		"type": "fill",
-		"question": "vancouver host the winter Olympic festival in _______ .",
+		"question": "Vancouver hosted the winter Olympic festival in the year of _______ .",
 		"answer": "2010"
 	}
 ]
