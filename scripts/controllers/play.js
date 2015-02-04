@@ -10,8 +10,7 @@
 angular.module('vancouverApp')
   .controller('PlayCtrl', function ($scope, globals, $http, $location, score, $interval, $rootScope){
 
-    //$scope.headerText = globals.current_category;
-    $scope.pageClass = 'page-play';
+    $("#header-text").text(globals.current_category.charAt(0).toUpperCase() + globals.current_category.slice(1));
 
     $scope.formData = {}; //answers received from user
     var q_lists = [];//array of questions    
@@ -168,12 +167,49 @@ angular.module('vancouverApp')
       $interval.cancel(timerInterval);
     }
 
+    $()
+
+
     //stop the timer when navigating away manually
     $rootScope.$on('$locationChangeStart', function (event, newUrl, oldUrl) {
       timerStop();
       }
     );   
 
+    
+    $scope.buttonClick = function(q_type){
+      //console.log(this);
+/*
+      var tmp_val = this.value;
+      console.log($('input[value='+tmp_val+']'));
+      $('input[value='+tmp_val+']').attr('ng-checked', true);
+      */
+      //console.log($scope.formData.mc_val);
+console.log("aaa");
 
+      if(q_type == "mc"){
+        $scope.formData.mc_val = this.value;  
+      }else if(q_type == "check"){
+        //if the value not in the array, push into the array
+        if($.inArray(this.value, $scope.formData.check_val) == -1 ){
+          $scope.formData.check_val.push(this.value);
+        //or if it's already in the array, pull it out
+        }else{
+          var tmp_i = $scope.formData.check_val.indexOf(this.value);
+          if(tmp_i != -1)
+            $scope.formData.check_val.splice(tmp_i,1);                    
+        }
+
+      }else if(q_type == "fill"){
+        //do nothing
+
+      }else{
+        console.log("something wrong");
+      }
+
+          
+
+
+    };
 
 });

@@ -32,7 +32,7 @@
 
 <div ng-if="isMc">    
   <div ng-repeat="(value, option) in option" >
-    <div class="row">
+    <div class="row" ng-click="buttonClick('mc')">
       <div class="col-xs-1">
       </div>
       <div class="col-xs-2 option-button vertical-align-table-p">
@@ -54,7 +54,7 @@
 
 <div ng-if="isCheck">
   <div ng-repeat="(value, option) in option" >
-    <div class="row">
+    <div class="row" ng-click="buttonClick('check')">
       <div class="col-xs-1">
       </div>
       <div class="col-xs-2 option-button vertical-align-table-p">

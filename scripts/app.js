@@ -61,12 +61,12 @@ app.factory('score', function(){
 
   score.attractions = 0;
   score.entertainment = 0;
-  score.geography = 0;
+  score.location = 0;
   score.history = 0;
   score.sports = 0;
 
   score.getTotalScore = function(){
-    return score.attractions + score.entertainment + score.geography + score.history + score.sports;
+    return score.attractions + score.entertainment + score.location + score.history + score.sports;
   }
 
   score.setToZero = function(category){
@@ -77,8 +77,8 @@ app.factory('score', function(){
       case "entertainment":
         score.entertainment = 0;
       break;
-      case "geography":
-        score.geography = 0;
+      case "location":
+        score.location = 0;
       break;
       case "history":
         score.history = 0;
@@ -98,8 +98,8 @@ app.factory('score', function(){
       case "entertainment":
         score.entertainment += 10;
       break;
-      case "geography":
-        score.geography += 10;
+      case "location":
+        score.location += 10;
       break;
       case "history":
         score.history += 10;
@@ -119,8 +119,8 @@ app.factory('score', function(){
       case "entertainment":
         return score.entertainment;
       break;
-      case "geography":
-        return score.geography;
+      case "location":
+        return score.location;
       break;
       case "history":
         return score.history;

@@ -13,8 +13,7 @@
 angular.module('vancouverApp')
   .controller('HomeCtrl', function ($scope, globals, $location, score) {
 
-    //$scope.headerText = 'Home';
-    $scope.pageClass = 'page-home';
+    $("#header-text").text("Home");
 
     globals.current_page = "Home";
 
@@ -25,7 +24,7 @@ angular.module('vancouverApp')
     $scope.chooseCategory = function(category){
     	//if chose random, get a random category
 		if(category == 'random'){
-    		var cat_arr = ["sports", "attractions", "entertainment", "history", "geography"];
+    		var cat_arr = ["sports", "attractions", "entertainment", "history", "location"];
     		//random number from 0 to 4
 			var ran_num = Math.floor((Math.random() * 4 ));    					
 			category = cat_arr[ran_num];
