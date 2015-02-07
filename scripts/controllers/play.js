@@ -23,6 +23,9 @@ angular.module('vancouverApp')
     var q_index = 0; //start from 0
     var q_limit = 6; //6 questions per try
     var timerInterval; //setInterval for timer
+	
+	//initialize formData.check_val object to avoid the bug "Cannot read property 'push' of undefined"
+	$scope.formData.check_val = [];
 
     //if the current_category is 'none', it means that the user refreshed the page or manually typed the url path
     if(globals.current_category == "none"){
@@ -191,7 +194,17 @@ angular.module('vancouverApp')
 
         //if the value not in the array, push into the array
         if($.inArray(this.value, $scope.formData.check_val) == -1 ){
-          $scope.formData.check_val.push(this.value);
+		  try{
+			$scope.formData.check_val.push(this.value);
+		  }catch(err){			
+			console.log(err);
+			/*
+			console.log(this);
+			console.log($scope.formData);
+			console.log($scope.formData.check_val);
+			*/
+		  }
+          
         //or if it's already in the array, pull it out
         }else{
           var tmp_i = $scope.formData.check_val.indexOf(this.value);
