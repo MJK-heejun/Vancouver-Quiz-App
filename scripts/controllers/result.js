@@ -16,6 +16,7 @@ angular.module('vancouverApp')
         $scope.$apply();
     });
 
+    $scope.pageClass = "page-result";
     $scope.lions = false;
 
     //retrive the result

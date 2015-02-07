@@ -19,6 +19,8 @@ angular.module('vancouverApp')
         $scope.$apply();
     });
 
+
+    $scope.pageClass = "page-home";
     globals.current_page = "Home";
 
 

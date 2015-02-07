@@ -16,6 +16,8 @@ angular.module('vancouverApp')
         $scope.$apply();
     });
 
+    $scope.pageClass = "page-play";
+
     $scope.formData = {}; //answers received from user
     var q_lists = [];//array of questions    
     var q_index = 0; //start from 0
