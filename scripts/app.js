@@ -11,7 +11,6 @@
 angular
   .module('vancouverApp', [
     'ngAnimate',
-    'ngMessages',
     'ngRoute',
     'ngSanitize',
     'ngTouch',
