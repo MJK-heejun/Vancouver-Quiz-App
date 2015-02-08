@@ -176,8 +176,6 @@ angular.module('vancouverApp')
       $interval.cancel(timerInterval);
     }
 
-    $()
-
 
     //stop the timer when navigating away manually
     $rootScope.$on('$locationChangeStart', function (event, newUrl, oldUrl) {
@@ -194,17 +192,11 @@ angular.module('vancouverApp')
 
         //if the value not in the array, push into the array
         if($.inArray(this.value, $scope.formData.check_val) == -1 ){
-		  try{
-			$scope.formData.check_val.push(this.value);
-		  }catch(err){			
-			console.log(err);
-			/*
-			console.log(this);
-			console.log($scope.formData);
-			console.log($scope.formData.check_val);
-			*/
-		  }
-          
+    		  try{
+    			 $scope.formData.check_val.push(this.value);
+    		  }catch(err){			
+    			 console.log(err);
+    		  }
         //or if it's already in the array, pull it out
         }else{
           var tmp_i = $scope.formData.check_val.indexOf(this.value);
@@ -218,10 +210,6 @@ angular.module('vancouverApp')
       }else{
         console.log("something wrong");
       }
-
-          
-
-
     };
 
 });
