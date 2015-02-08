@@ -1,4 +1,4 @@
-# iat381-assng1
+# Vancouver Quiz App
 
 Code Conventions
 
