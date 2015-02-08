@@ -13,7 +13,9 @@
 angular.module('vancouverApp')
   .controller('HomeCtrl', function ($scope, globals, $location, score) {
 
+    //Header text change
     $("#header-text").text("Home");
+    //home button functional
     $("#big-home img").click(function(){
         $location.path('/home');
         $scope.$apply();
